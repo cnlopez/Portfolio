@@ -11,15 +11,20 @@ const { href, texto } = Astro.props;
 		justify-content: center;
 		align-items: center;
 		padding: 1.1rem 2.2rem;
-		background: var(--primary);
+		background-color: #c49a00; /* Fondo dorado */
 		border-radius: 100px;
 		font-size: var(--text-x-large);
-		transition: 0.35s opacity;
+		transition: background-color 0.3s ease, color 0.3s ease, 0.35s opacity;
 		max-width: max-content;
-		color: var(--primary-90);
+		color: #ffffff; /* Texto blanco */
+		cursor: pointer;
+		border: 2px solid #4d0000; /* Borde rojo oscuro */
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 	}
 	.button:hover {
 		opacity: 0.7;
+		background-color: #ff6600; /* Cambia a naranja oscuro al pasar el ratón */
+		color: #000000; /* Texto negro para mejor contraste en fondo naranja */
 	}
 	.button:active {
 		opacity: 0.5;

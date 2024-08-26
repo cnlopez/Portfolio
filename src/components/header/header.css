@@ -24,7 +24,6 @@
 	flex-wrap: wrap;
 }
 
-
 .header .profile .header__title {
 	font-size: var(--text-title);
 	font-weight: 600;
@@ -146,6 +145,10 @@
 	}
 }
 
+.menu__link {
+	font-weight: bold; /* Aplica negrita a todo el contenido del enlace */
+}
+
 @keyframes scroll-btn {
 	0%,
 	1% {
@@ -153,6 +156,5 @@
 	}
 	2% {
 		opacity: inherit;
-
 	}
 }

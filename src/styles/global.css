@@ -1,17 +1,17 @@
 :root {
 	/* color  */
-	--primary-0: #333300;
-	--primary-10: #666600;
-	--primary-20: #999900;
-	--primary-30: #cccc00;
-	--primary-40: #ffff00;
-	--primary-50: #ffff33;
-	--primary-60: #ffff66;
-	--primary-70: #ffff99;
-	--primary-80: #ffffcc;
-	--primary-90: #ffffe6;
-	--primary-95: #fffff2;
-	--primary-99: #fffffa;
+	--primary-0: #1a0000;
+	--primary-10: #330000;
+	--primary-20: #4d0000;
+	--primary-30: #660000;
+	--primary-40: #800000;
+	--primary-50: #990000;
+	--primary-60: #b30000;
+	--primary-70: #cc0000;
+	--primary-80: #e60000;
+	--primary-90: #ff1a1a;
+	--primary-95: #ff4d4d;
+	--primary-99: #ffe6e6;
 	--primary-100: #ffffff;
 
 	--secondary-0: #1c050e;
@@ -64,8 +64,9 @@
 
 	--text-gradient: radial-gradient(
 		circle farthest-corner at center center,
-		#58f9ff 0%,
-		#df44e7 100%
+		#b30000 0%,
+		/* rojo oscuro */ #ff6600 50%,
+		/* naranja oscuro */ #ffcc00 100% /* dorado */
 	);
 }
 * {
@@ -98,4 +99,32 @@ p {
 
 .max__width {
 	max-width: 117.8rem;
+}
+
+#btnWantMore {
+	background-color: #ffcc00; /* Fondo dorado */
+	color: #ffffff; /* Texto blanco */
+	padding: 1rem 2rem;
+	border: 2px solid #4d0000; /* Borde rojo oscuro */
+	border-radius: 5px;
+	font-size: 1.6rem; /* Tamaño de fuente del texto del botón */
+	font-family: var(--font-montserrat); /* Tipografía consistente */
+	cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+	transition: background-color 0.3s ease, color 0.3s ease;
+}
+#btnWantMore:hover {
+	background-color: #ff6600; /* Cambia a naranja oscuro al pasar el ratón */
+	color: #000000; /* Texto negro para mejor contraste en fondo naranja */
+}
+
+.skills-list {
+	list-style-type: disc; /* Establece el estilo de los puntos (discos) */
+	padding-left: 20px; /* Ajusta la indentación de la lista */
+	margin: 0; /* Elimina el margen de la lista si es necesario */
+}
+
+.skills-list li {
+	color: white; /* Cambia el color del texto a blanco */
+	font-size: 1.6rem; /* Aumenta el tamaño del texto */
 }
